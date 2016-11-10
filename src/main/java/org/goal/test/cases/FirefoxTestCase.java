@@ -37,7 +37,6 @@ public abstract class FirefoxTestCase {
     @BeforeClass
     public static void setUpBeforeClass() throws Exception {
 
-
         System.setProperty("webdriver.gecko.driver", "/home/kostya/libs/geckodriver");
         DesiredCapabilities capabilities = DesiredCapabilities.firefox();
         capabilities.setCapability("marionette", true);
